@@ -1,0 +1,16 @@
+
+{
+  "name": "sgmagar-crowdbotics-dev-147",
+  "description": "This is repository for web app developed with django  and with features authentication",
+  "repository": "https://github.com/crowdbotics-users/sgmagar-crowdbotics-dev-147",
+  "keywords": ['web', 'authentication'],
+  "env": {
+    "DEBUG_COLLECTSTATIC": "1" 
+  },
+  "addons": [
+    "heroku-postgresql:hobby-dev"
+  ],
+  "scripts": {
+    "postdeploy": "python manage.py migrate --noinput"
+  }
+}
